@@ -1,6 +1,6 @@
 package com.company;
 
-public class Seat {
+public class Seat implements Comparable<Seat> {
 
     // == fields ==
 
@@ -41,5 +41,9 @@ public class Seat {
         }
     }
 
+    @Override
+    public int compareTo(Seat seat) {
+        return this.seatNumber.compareToIgnoreCase(seat.getSeatNumber());
+    }
 }
 
