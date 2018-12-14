@@ -7,7 +7,7 @@ public class Theatre {
     // == fields ==
 
     private final String theatreName;
-    private List<Seat> seats = new ArrayList<>();
+    public List<Seat> seats = new ArrayList<>();
 
     // == constructors ==
 
@@ -44,26 +44,28 @@ public class Theatre {
         }
     }
 
-//        for (Seat seat : seats) {
-//            System.out.print(".");
-//            if (seat.getSeatNumber().equals(seatNumber)) {
-//                requestedSeat = seat;
-//                break;
-//            }
-//        }
-//
-//        if (requestedSeat == null) {
-//            System.out.println("There is no seat " + seatNumber);
-//            return false;
-//        }
-//
-//        return requestedSeat.reserve();
-//    }
-
     // == for testing ==
     public void getSeats() {
         for (Seat seat : seats) {
             System.out.println(seat.getSeatNumber());
+        }
+    }
+
+    public static void printList(List<Seat> list) {
+        for (Seat seat : list) {
+            System.out.print(" " + seat.getSeatNumber());
+        }
+        System.out.println();
+        System.out.println("======================================================================");
+    }
+
+    public static void sortList(List<? extends Seat> list) {
+        for (int i = 0; i < list.size() - 1; i++) {
+            for (int j = i + 1; j < list.size(); j++) {
+                if (list.get(i).compareTo(list.get(j)) > 0) {
+                    Collections.swap(list, i, j);
+                }
+            }
         }
     }
 }
