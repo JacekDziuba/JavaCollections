@@ -5,4 +5,4 @@ Repo with exercises from javaMasterClass from learnprogrammingacademy.com:
 	
 	Comparable interface
 
-	Collections methods: sort, min, max, shuffle, copying arrayLists.
+	Collections methods: sort, min, max, shuffle, swap, reverse copying arrayLists.
