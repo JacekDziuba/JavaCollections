@@ -5,18 +5,24 @@ public class Seat implements Comparable<Seat> {
     // == fields ==
 
     private final String seatNumber;
+    private double price;
     private boolean reserved = false;
 
     // == constructors ==
 
-    public Seat(String seatNumber) {
+    public Seat(String seatNumber, double price) {
         this.seatNumber = seatNumber;
+        this.price = price;
     }
 
     // == getters and setters
 
     public String getSeatNumber() {
         return seatNumber;
+    }
+
+    public double getPrice() {
+        return price;
     }
 
     // == public methods ==
@@ -43,7 +49,7 @@ public class Seat implements Comparable<Seat> {
 
     @Override
     public int compareTo(Seat seat) {
-        return this.seatNumber.compareToIgnoreCase(seat.getSeatNumber());
+         return this.seatNumber.compareToIgnoreCase(seat.getSeatNumber());
     }
 }
 
