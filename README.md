@@ -1,8 +1,12 @@
 # JavaCollections
 Repo with exercises from javaMasterClass from learnprogrammingacademy.com:
 	
-	Binary search
+	Binary search in ArrayLists.
 	
-	Comparable interface
+	Comparable interface. 
+	Comparator anonymous class. 
+	.compareTo() method.
 
-	Collections methods: sort, min, max, shuffle, swap, reverse copying arrayLists.
+	ArrayList	: .sort(), .min(), .max(), .shuffle(), .swap(), .reverse(), copying arrayLists.
+
+	Maps		: .put(), .get(), .keySet().
