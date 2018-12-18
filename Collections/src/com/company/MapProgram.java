@@ -32,7 +32,22 @@ public class MapProgram {
 
         System.out.println("=======================================");
 
-        //.keySet() method and iterating through the map. No guaranteed order.
+//        languages.remove("Lisp"); // .remove() method returns true/false
+        if (languages.remove("Algol", "an algorythmic language")) {
+            System.out.println("Algol removed");
+        } else {
+            System.out.println("Algol not removed, key/value pair not found");
+        }
+
+        // .replace()
+        if (languages.replace("Lisp", "Therein lies madness", "a functional programming language eith impreative features")){
+            System.out.println("Lisp replaced");
+        } else {
+            System.out.println("Lisp was not replaced");
+        }
+//        System.out.println(languages.replace("Scala", "this will not be added"));
+
+        // .keySet() method and iterating through the map. No guaranteed order.
         for (String key : languages.keySet()) {
             System.out.println(key + ": " + languages.get(key));
         }
