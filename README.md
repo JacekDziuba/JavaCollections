@@ -9,4 +9,6 @@ Repo with exercises from javaMasterClass from learnprogrammingacademy.com:
 
 	ArrayList	: .sort(), .min(), .max(), .shuffle(), .swap(), .reverse(), copying arrayLists.
 
-	Maps		: .put(), .get(), .keySet().
+	Maps		: .put(), .get(), .keySet(), .replace().
+		
+		adventure game - a game that uses maps.
