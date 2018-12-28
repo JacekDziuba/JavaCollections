@@ -13,14 +13,18 @@ public class Location {
 
     // == constructors ==
 
-    public Location(int locationId, String description) {
+    public Location(int locationId, String description, Map<String, Integer> exits) {
         this.locationId = locationId;
         this.description = description;
-        this.exits = new HashMap<String, Integer>();
+        if (exits != null) {
+            this.exits = new HashMap<String, Integer>(exits);
+        } else {
+            this.exits = new HashMap<String, Integer>();
+        }
         this.exits.put("Q", 0);
     }
 
-    // == getters and setters ==
+    // == getters ==
 
     public int getLocationId() {
         return locationId;
@@ -36,9 +40,9 @@ public class Location {
 
     // == public methods ==
 
-    public void addExit (String direction, int location) {
-        exits.put(direction, location);
-    }
+//    public void addExit (String direction, int location) {
+//        exits.put(direction, location);
+//    }
 
 
 }
