@@ -1,11 +1,11 @@
-package com.adventureGame;
+package com.MapAndSet;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Quiz {
+public class QuestionAndAnswerMain {
 
     public static void main(String[] args) {
 

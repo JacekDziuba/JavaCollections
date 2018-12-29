@@ -1,4 +1,4 @@
-package com.company;
+package com.ListAndMap;
 
 public class Seat implements Comparable<Seat> {
 

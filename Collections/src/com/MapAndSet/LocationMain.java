@@ -1,10 +1,10 @@
-package com.adventureGame;
+package com.MapAndSet;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class Main {
+public class LocationMain {
 
     private static Map<Integer, Location> locations = new HashMap<Integer, Location>();
 
