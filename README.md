@@ -12,4 +12,4 @@ Repo with exercises from javaMasterClass from learnprogrammingacademy.com:
 	Maps		: .put(), .get(), .keySet(), .replace().
 		Adventure game	: infinite loop (while(true){..}, Scanner, Map<>, Immutable Classes.
 		
-	Sets		:
+	Sets		: overriding .equals() and .hashcode().
